@@ -1,0 +1,12 @@
+{
+  "name": "@itchef/dir-sync",
+  "version": "0.0.0",
+  "description": "Dir sync is a npm package published by ITchef. It helps to perform directory actions in sync way.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ITChef", "Dir", "Node", "npm"],
+  "author": "Kaustav Chakraborty @phoenixTW",
+  "license": "MIT"
+}
