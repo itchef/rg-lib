@@ -1,6 +1,6 @@
-# dir-sync
+# rg-lib
 
-A lightweight npm package with methods for some basic synchronous directory operations. 
+A lightweight npm package with methods for some basic synchronous directory, file, git and logging operations. 
 
 ## Table of Contents
 * [Installation](#installation)
@@ -9,14 +9,14 @@ A lightweight npm package with methods for some basic synchronous directory oper
 
 ### Installation
 ```
-npm install --save dir-sync
+npm install --save @itchef/rg-lib
 ```
  
 ### Usage
 Assume that the following line of code precedes all of the examples.
 
 ```ecmascript 6
-import DirSync from 'dir-sync'
+import { Dir } from '@itchef/rg-lib'
 ```
 
 ### License
