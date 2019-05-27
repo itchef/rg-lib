@@ -1,7 +1,7 @@
 {
-  "name": "@itchef/dir-sync",
+  "name": "@itchef/rg-lib",
   "version": "0.0.0",
-  "description": "Dir sync is a npm package published by ITchef. It helps to perform directory actions in sync way.",
+  "description": "It is a sync package provides libraries for directory, file, git and logging operations.",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha --forbid-only \"./test/**/*.test.js\" --opts \"./test/mocha.opts\"",
