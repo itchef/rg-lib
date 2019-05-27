@@ -6,8 +6,5 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-class Dir {
-    constructor() {
-
-    }
-}
+const dir = require('./lib/Dir');
+module.exports = dir;

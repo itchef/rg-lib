@@ -4,7 +4,7 @@
   "description": "Dir sync is a npm package published by ITchef. It helps to perform directory actions in sync way.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --forbid-only \"./test/**/*.test.js\" --opts \"./test/mocha.opts\"",
     "build": "webpack --mode production"
   },
   "keywords": [
@@ -17,17 +17,20 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
     "@babel/preset-env": "7.4.5",
     "@babel/preset-es2015": "7.0.0-beta.53",
-    "@babel/plugin-proposal-class-properties": "7.4.4",
-    "babel-loader": "8.0.6",
     "babel-eslint": "10.0.1",
-    "webpack": "4.32.2",
-    "webpack-cli": "3.3.2",
+    "babel-loader": "8.0.6",
+    "chai": "4.2.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "4.3.0",
     "eslint-plugin-import": "2.17.3",
-    "eslint-plugin-prettier": "3.1.0"
+    "eslint-plugin-prettier": "3.1.0",
+    "mocha": "6.1.4",
+    "chai-spies": "1.0.0",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2"
   },
   "dependencies": {
     "babel-polyfill": "6.26.0"

@@ -6,7 +6,7 @@
   "parser": "babel-eslint",
   "rules": {
     "import/no-extraneous-dependencies": [
-      "error", {"devDependencies": ["./spec/**/*.spec.js"]}
+      "error", {"devDependencies": ["./test/setupTests.js", "./test/**/*.test.js"]}
     ]
   }
 }

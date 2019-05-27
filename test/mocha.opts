@@ -1,0 +1,4 @@
+--file ./test/setupTests.js
+--recursive
+--reporter spec
+--timeout 5000
