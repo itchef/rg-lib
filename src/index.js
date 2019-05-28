@@ -6,5 +6,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const dir = require('./lib/Dir');
-module.exports = dir;
+const Dir = require('./lib/Dir');
+const File = require('./lib/File');
+const Git = require('./lib/Git');
+module.exports = {
+    Dir,
+    File,
+    Git,
+};
