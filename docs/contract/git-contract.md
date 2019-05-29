@@ -15,7 +15,6 @@ const { Git } = require('@itchef/rg-lib');
 
 Method Name | Arguments | Description
 ---------|----------|---------|-----
-
 init() | None | Initialize git into a project
 clone(owner, repo, dir) | **owner:** String, **repo:** String, **dir:** String (*Optional* / *Default:* `''`) | Clone a repository from **owner**'s **repo** and place it to a **dir**
 add(option) | option: `{ flag: all | blank, files: [ LIST OF FILES IF FLAG IS NOT ALL ] }` | Add files to local git
