@@ -19,6 +19,7 @@ Assume that the following line of code precedes all of the examples.
     ```ecmascript 6
     import { Dir } from '@itchef/rg-lib'
     ```
+    Please find the [**contract here.**](./docs/contract/dir-contract.md)
 * To Use File Sync,
     ```ecmascript 6
     import { File } from '@itchef/rg-lib'
