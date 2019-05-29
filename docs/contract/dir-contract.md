@@ -29,6 +29,6 @@ Method Name | Return Type | Arguments | Default
  copy(dest) | `undefined` | Destination Folder (String)
 execute(callback) | `undefined` | Function | `() => null`
 make() | Dir *`(new Instance)`* | |
-read() | `<string[]> | <Buffer[]> | <fs.Dirent[]>` ||
+read() | `<string[]> / <Buffer[]> / <fs.Dirent[]>` ||
 
 See the implementation for more info: [Dir.js](../../src/lib/Dir.js)

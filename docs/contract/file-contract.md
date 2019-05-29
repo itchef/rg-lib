@@ -28,6 +28,6 @@ Method Name | Return Type | Arguments | Default
 ---------|----------|---------|-----
 read() | File *`(new Instance)`* ||
 update(key, value) | File *`(this)`* | **key:** String, **value:** any *(Only for JSON type data update)*
-write(path) | `<string[]> | <Buffer[]> | <fs.Dirent[]>` | **path:** String
+write(path) | `<string[]> / <Buffer[]> / <fs.Dirent[]>` | **path:** String
 
 See the implementation for more info: [File.js](../../src/lib/File.js)
