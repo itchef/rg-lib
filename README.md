@@ -15,9 +15,23 @@ npm install --save @itchef/rg-lib
 ### Usage
 Assume that the following line of code precedes all of the examples.
 
-```ecmascript 6
-import { Dir } from '@itchef/rg-lib'
-```
+* To Use Directory Sync,
+    ```ecmascript 6
+    import { Dir } from '@itchef/rg-lib'
+    ```
+* To Use File Sync,
+    ```ecmascript 6
+    import { File } from '@itchef/rg-lib'
+    ```
+* To Use Git tasks,
+    ```ecmascript 6
+    import { Git } from '@itchef/rg-lib'
+    ```
+* To Use Logger,
+    ```ecmascript 6
+    import { Logger } from '@itchef/rg-lib'
+    ```
+
 
 ### License
 
