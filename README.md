@@ -24,6 +24,7 @@ Assume that the following line of code precedes all of the examples.
     ```ecmascript 6
     import { File } from '@itchef/rg-lib'
     ```
+    Please find the [**contract here.**](./docs/contract/file-contract.md)
 * To Use Git tasks,
     ```ecmascript 6
     import { Git } from '@itchef/rg-lib'
