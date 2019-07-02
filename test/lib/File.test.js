@@ -53,10 +53,10 @@ describe('File', () => {
             expect(fl._data).to.be.undefined;
         });
 
-        it('should not update data for non json file', function () {
-            const fl = new File(`${PATH}`, { id: 1 });
-            fl.update('id', 2);
-            expect(fl._data.id).to.equal(1);
+        it('should replace key with value for non json file', function () {
+            const fl = new File(`${PATH}`, 'KEY is good');
+            fl.update('KEY', 'John');
+            expect(fl._data).to.equal('John is good');
         });
     });
 

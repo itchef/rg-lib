@@ -28,6 +28,9 @@ class File {
     update(key, value) {
         if (this._extension === JSON_EXTENSION && this._data !== undefined) {
             this._data[key] = value
+        } else if (this._data !== undefined) {
+            const regExp = new RegExp(key, 'g')
+            this._data = this._data.replace(regExp, value)
         }
         return this
     }
