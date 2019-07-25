@@ -7,6 +7,7 @@
  */
 
 const cp = require('child_process');
+const parse = require('parse-git-config');
 
 const GITHUB_URL = 'https://github.com/';
 
@@ -31,9 +32,16 @@ const commit = message => {
   cp.execSync(command);
 };
 
+const globalConfig = () => {
+  const home_dir = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+  const globalConfigPath = `${home_dir}/.gitconfig`;
+  return parse.sync({ path: globalConfigPath });
+};
+
 module.exports = {
   init,
   clone,
   add,
   commit,
+  globalConfig,
 };

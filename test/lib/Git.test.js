@@ -1,5 +1,6 @@
 const cp = require('child_process');
 const Git = require('../../src/lib/Git');
+const parse = require('parse-git-config');
 
 describe('Git', () => {
     describe('init', () => {
@@ -86,6 +87,27 @@ describe('Git', () => {
                 .to.have.been.called.with(
                     'git add .'
             );
+        });
+    });
+    describe('globalConfig', () => {
+        beforeEach(function () {
+            const config = {
+                user: {
+                    name: 'Some Name',
+                    email: 'some-name@example.com'
+                }
+            };
+            spy.on(parse, 'sync', () => config);
+        });
+        afterEach(function () {
+            spy.restore();
+        });
+        it('should fetch global git configuration', () => {
+            const homePath = process.env.HOME;
+            const config = Git.globalConfig();
+            expect(config.user.name).to.equal('Some Name');
+            expect(config.user.email).to.equal('some-name@example.com');
+            expect(parse.sync).to.have.been.called.with({path: `${homePath}/.gitconfig`})
         });
     });
 });
